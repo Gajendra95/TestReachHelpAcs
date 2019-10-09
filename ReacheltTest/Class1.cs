@@ -49,7 +49,7 @@ namespace ReachheltTest
         {
             string url = "http://172.16.51.194/AcsReachHelp/";
             string AdminUsername = "7760685259";
-            //string AdminPassword = "test1";
+            string AdminPassword = "test1";
 
             IWebDriver oWD = new ChromeDriver();
             oWD.Navigate().GoToUrl(url);
@@ -59,7 +59,7 @@ namespace ReachheltTest
             Task.Delay(2000).Wait();
 
             oWD.FindElement(By.Id("mobileno")).SendKeys(AdminUsername);
-            oWD.FindElement(By.XPath("/html[1]/body[1]/form[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]")).SendKeys("test1");
+            oWD.FindElement(By.Id("password")).SendKeys(AdminPassword);
             oWD.FindElement(By.Id("loginbtn")).Submit();
             Task.Delay(2000).Wait();
             oWD.FindElement(By.XPath("/html[1]/body[1]/form[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/ul[1]/li[1]/a[1]/span[1]")).Click(); //need
