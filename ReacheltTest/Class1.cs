@@ -48,8 +48,8 @@ namespace ReachheltTest
         public void tcUser()
         {
             string url = "http://172.16.51.194/AcsReachHelp/";
-            string AdminUsername = "7760685259";
-            string AdminPassword = "test1";
+            string AdminUsername = "8801227744";
+            string AdminPassword = "12345";
 
             IWebDriver oWD = new ChromeDriver();
             oWD.Navigate().GoToUrl(url);
