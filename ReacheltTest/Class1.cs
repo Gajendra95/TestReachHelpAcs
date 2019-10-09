@@ -59,7 +59,7 @@ namespace ReachheltTest
             Task.Delay(2000).Wait();
 
             oWD.FindElement(By.Id("mobileno")).SendKeys(AdminUsername);
-            oWD.FindElement(By.Id("password")).SendKeys("test1");
+            oWD.FindElement(By.XPath("/html[1]/body[1]/form[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]")).SendKeys("test1");
             oWD.FindElement(By.Id("loginbtn")).Submit();
             Task.Delay(2000).Wait();
             oWD.FindElement(By.XPath("/html[1]/body[1]/form[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/ul[1]/li[1]/a[1]/span[1]")).Click(); //need
