@@ -47,7 +47,7 @@ namespace ReachheltTest
         [Test]
         public void tcUser()
         {
-            string url = "http://172.16.51.136/ReachhelpAcs";
+            string url = "http://172.16.51.194/AcsReachHelp/";
             string AdminUsername = "7760685259";
             //string AdminPassword = "test1";
 
